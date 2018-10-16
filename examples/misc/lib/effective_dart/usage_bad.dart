@@ -61,7 +61,7 @@ void miscDeclAnalyzedButNotTested() {
   {
     // #docregion where-type
     var objects = [1, "a", 2, "b", 3];
-    var ints = objects.where((e) => e is int);
+    var ints = objects.whereType<int>();
     // #enddocregion where-type
   }
 

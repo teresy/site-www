@@ -55,7 +55,7 @@ void showConstructors(ClassMirror mirror) {
 }
 
 void showFields(ClassMirror mirror) {
-  var fields = mirror.declarations.values.where((m) => m is VariableMirror);
+  var fields = mirror.declarations.values.whereType<VariableMirror>();
 
   fields.forEach((m) {
     VariableMirror v = m as VariableMirror;
